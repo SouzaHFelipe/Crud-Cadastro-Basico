@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/header-title.css">
+    <link rel="stylesheet" href="/css/buttons.css">
+    <link rel="stylesheet" href="/css/record.css">
+    <link rel="stylesheet" href="/css/modal.css">
     <title>CRUD</title>
 
 </head>
@@ -12,13 +16,13 @@
 <body>
      <header class="header-title"> 
       
-      <h1>Cadastro Clientes </h1>
+      <h1 class="header-title">Cadastro Clientes </h1>
 
      </header>
 
      <main>
-        <button type="button">Cadastrar Cliente</button>
-        <table>
+        <button type="button" class="button blue">Cadastrar Cliente</button>
+        <table class="record">
             <thead>
                <tr>
                   <th>Nome</th>
@@ -35,8 +39,8 @@
                   <td>(00) 00000-0000</td>
                   <td>CWB</td>
                   <td>
-                  <button type="button">Editar</button>
-                  <button type="button">Excluir</button>
+                  <button type="button" class="button green">Editar</button>
+                  <button type="button" class="button red">Excluir</button>
                </td>
                </tr>
                <tr>
@@ -45,8 +49,8 @@
                   <td>(00) 00000-0000</td>
                   <td>CWB</td>
                   <td>
-                  <button type="button">Editar</button>
-                  <button type="button">Excluir</button>
+                     <button type="button" class="button green">Editar</button>
+                     <button type="button" class="button red ">Excluir</button>
                </td>
                </tr>
                <tr>
@@ -55,12 +59,33 @@
                   <td>(00) 00000-0000</td>
                   <td>CWB</td>
                   <td>
-                  <button type="button">Editar</button>
-                  <button type="button">Excluir</button>
+                     <button type="button" class="button green">Editar</button>
+                     <button type="button" class="button red">Excluir</button>
                </td>
                </tr>
             </tbody>
         </table>
+        <div class="modal">
+         <div class="modal-content">
+            <header>
+               <h2>Novo CLiente</h2>
+               <span class="modal-close"></span>
+            </header>
+            <form class="modal-form">
+               <input type="text" class="modal-field" placeholder="Nome Do Cliente">
+               <input type="email" class="modal-field" placeholder="E-mail Do Cliente">
+               <input type="text" class="modal-field" placeholder="Celular Do Cliente">
+               <input type="text" class="modal-field" placeholder="Cidade Do Cliente">
+
+            </form>
+            <footer class="modal-footer">
+               <button class="button green">Salvar</button>
+               <button class="button blue">Cancelar</button>
+
+
+            </footer>
+         </div>
+        </div>
 
 
      </main>
