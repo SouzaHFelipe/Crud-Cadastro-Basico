@@ -1,0 +1,29 @@
+.modal {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    top: 0;
+    left: 0;
+    background: #00000090;
+    position: absolute;
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 15vh auto;
+    width: 50vw;
+    background-color: white;
+    padding-bottom: 20px;
+    box-shadow:  1px 1px 1px black;
+}
+
+.modal-from{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+
+}
